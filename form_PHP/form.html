@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>    
+
+<body>
+<form method='POST' action="data-insert.php">
+    <label>PID</label><input type="number" name="pid" value="999"/><br/>
+    
+    <label>Name</label><input type="text" name="name" value=""/><br/>
+   
+    <label>Team Name</label>
+        <select name="teams">
+            <option value="U10">U10</option>
+            <option value="U11">U11</option>
+            <option value="U12">U12</option>
+        </select> <br/>
+    
+        <label>Gender</label><br/>
+    <input type="radio" name="gender" value="M"/><label>Male</label> <br/>
+    <input type="radio" name="gender" value="F"/><label>Female</label> <br/>
+    <input type="radio" name="gender" value="X"/><label>Other</label> <br/>
+
+    <label>Favorite Sports</label><br/>
+        <input type="checkbox" name="sports[]" value="sc"/> <label>Soccer</label><br/>
+        <input type="checkbox" name="sports[]" value="tc"/> <label>Tennis</label><br/>
+        <input type="checkbox" name="sports[]" value="sw"/> <label>Swimming</label><br/>
+        <input type="checkbox" name="sports[]" value="bb"/> <label>Basketball</label><br/>
+        <input type="submit" name="submit" value="Submit"/>
+</form>
+
+</body>
+
+
+
+</html>
